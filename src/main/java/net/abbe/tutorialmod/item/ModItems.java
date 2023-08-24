@@ -13,18 +13,13 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item sandstorm = registerItem("sandstorm", new Item(new FabricItemSettings()));
 
-    private static void  addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
-        entries.add(sandstorm);
-    }
-
-
     private static Item registerItem(String name, Item item){
               return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
 
     public static void registerModItems(){
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+
 
     }
 }

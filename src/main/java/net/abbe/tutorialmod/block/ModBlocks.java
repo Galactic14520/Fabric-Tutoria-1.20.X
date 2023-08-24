@@ -21,7 +21,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)));
 
     private static Block registerBlock(String name, Block block) {
-
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 

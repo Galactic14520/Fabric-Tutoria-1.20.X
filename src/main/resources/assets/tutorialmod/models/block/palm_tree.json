@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all" : "tutorialmod:block/palm_tree"
+    "end": "tutorialmod:block/palm_log_top",
+    "side": "tutorialmod:block/palm_log_side"
   }
 }

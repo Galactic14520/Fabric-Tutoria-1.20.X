@@ -16,8 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sandstorm"))
                     .icon(() -> new ItemStack(ModItems.sandstorm)).entries((displayContext, entries) -> {
                         entries.add(ModItems.sandstorm );
-                        entries.add(ModBlocks.PALM_TREE);
-                        entries.add(ModBlocks.PALM_WOOD_PLANK);
+                        entries.add(ModBlocks.PALM_TREE.asItem());
+                        entries.add(ModBlocks.PALM_WOOD_PLANK.asItem());
 
                     }).build());
     public static void registerItemGroups() {

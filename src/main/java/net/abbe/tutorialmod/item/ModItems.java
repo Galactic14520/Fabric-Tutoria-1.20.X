@@ -12,6 +12,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item sandstorm = registerItem("sandstorm", new Item(new FabricItemSettings()));
+    public static final Item COCONUT = registerItem("coconut", new Item(new FabricItemSettings().food(ModFoodComponents.COCONUT)));
+
 
     private static Item registerItem(String name, Item item){
               return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);

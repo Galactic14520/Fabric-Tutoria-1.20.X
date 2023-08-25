@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "tutorialmod:block/palm_log_side",
+    "side": "tutorialmod:block/palm_log_side"
+  }
+}

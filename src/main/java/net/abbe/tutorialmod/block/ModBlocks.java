@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.PillarBlock;
+import net.minecraft.block.TurtleEggBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -23,11 +24,13 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).sounds(BlockSoundGroup.WOOD)));
     public static final Block STRIPPED_PALM_TREE = registerBlock("stripped_palm_tree",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).sounds(BlockSoundGroup.WOOD)));
-
     public static final Block STRIPPED_PALM_TREE_WOOD = registerBlock("stripped_palm_tree_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).sounds(BlockSoundGroup.WOOD)));
-    public static final Block PALM_WOOD_PLANK = registerBlock("palm_plank",
+    public static final Block PALM_PLANK = registerBlock("palm_plank",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SEASHELL = registerBlock("seashell",
+            new TurtleEggBlock(FabricBlockSettings.copyOf(Blocks.TURTLE_EGG).sounds(BlockSoundGroup.BONE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

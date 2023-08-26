@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "models": "tutorialmod:block/palm_plank"
+      "model": "tutorialmod:block/palm_plank"
     }
   }
 }

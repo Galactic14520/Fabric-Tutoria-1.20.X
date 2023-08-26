@@ -15,12 +15,17 @@ public class ModItemGroups {
             new Identifier(TutorialMod.MOD_ID, "sandstorm"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sandstorm"))
                     .icon(() -> new ItemStack(ModItems.sandstorm)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.sandstorm );
+
                         entries.add(ModBlocks.PALM_TREE.asItem());
-                        entries.add(ModBlocks.PALM_WOOD_PLANK.asItem());
                         entries.add(ModBlocks.PALM_TREE_WOOD.asItem());
                         entries.add(ModBlocks.STRIPPED_PALM_TREE.asItem());
                         entries.add(ModBlocks.STRIPPED_PALM_TREE_WOOD.asItem());
+                        entries.add(ModBlocks.PALM_PLANK.asItem());
+                        entries.add(ModBlocks.SEASHELL.asItem());
+
+
+                        entries.add(ModItems.sandstorm );
+
                         entries.add(ModItems.COCONUT);
 
                     }).build());
